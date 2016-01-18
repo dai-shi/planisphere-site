@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(content="width=device-width, initial-scale=1, user-scalable=no", name="viewport")
+    title PlanisphereJS
+    link(href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css", rel="stylesheet")
+    style.
+      html, body {
+        height: 100%;
+      }
+      body {
+        background-image: url(/images/background.jpg);
+        background-size: cover;
+        background-position: center center;
+      }
+    script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js")
+    script(src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js")
+    script.
+      $(document).ready(function() {
+        var pathname = window.location.pathname;
+        $('.nav > li > a[href="' + pathname + '"]').parent().addClass('active');
+        $('body').css('padding-top', $('.navbar-fixed-top').outerHeight());
+      });
+  body
+    nav.navbar.navbar-dark.bg-inverse.navbar-fixed-top
+      a.navbar-brand(href="/") PlanisphereJS
+      ul.nav.navbar-nav
+        li.nav-item
+          a.nav-link(href="/") Home
+        li.nav-item
+          a.nav-link(href="/usage.html") Usage
+        li.nav-item
+          a.nav-link(href="/example.html") Example
+    block content

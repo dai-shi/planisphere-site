@@ -1,0 +1,18 @@
+extends ./layout.jade
+
+block content
+  .container
+    .container.m-t-2(style="background-color: white;")
+      .p-t-2
+      h1.display-5 Usage
+      pre(style="border: 1px solid lightgrey; border-radius: 5px; margin: 20px 0; padding: 10px; background-color: black; color: white;").
+        meteor create planisphere-example
+        cd planisphere-example
+        meteor add daishi:planisphere-core
+        meteor add daishi:planisphere-plugin-main-layout
+        meteor add daishi:planisphere-plugin-login-page
+        meteor add daishi:planisphere-plugin-welcome-page
+        meteor add daishi:planisphere-plugin-tabular-page
+        meteor add daishi:planisphere-plugin-submit-page
+        meteor add accounts-password
+        meteor run

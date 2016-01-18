@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"><title>PlanisphereJS</title><link href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" rel="stylesheet"><style>body {
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-position: center center;
+}</style><script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script><script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script><script>$(document).ready(function() {
+  var pathname = window.location.pathname;
+  $('.nav > li > a[href="' + pathname + '"]').parent().addClass('active');
+  $('body').css('padding-top', $('.navbar-fixed-top').outerHeight());
+});</script></head><body><nav class="navbar navbar-dark bg-inverse navbar-fixed-top"><a href="/" class="navbar-brand">PlanisphereJS</a><ul class="nav navbar-nav"><li class="nav-item"><a href="/" class="nav-link">Home</a></li><li class="nav-item"><a href="/usage.html" class="nav-link">Usage</a></li><li class="nav-item"><a href="/example.html" class="nav-link">Example</a></li></ul></nav><div class="container"><div class="jumbotron m-t-2"><h1 class="display-5">Welcome to PlanisphereJS</h1><p class="lead">A web application generated based on Meteor</p><hr class="m-y-2"><table style="background-color: white;" class="table"><tr><td class="text-xs-right"><a href="https://github.com/dai-shi/planisphere-core" target="_blank" class="btn btn-primary">GitHub</a></td><td style="vertical-align: middle;">the project page</td></tr><tr><td class="text-xs-right"><a href="http://planisphere-demo.meteor.com" target="_blank" class="btn btn-primary">Demo</a></td><td style="vertical-align: middle;">a web application created by PlanisphereJS</td></tr></table></div></div></body></html>
