@@ -1,11 +1,13 @@
 {
   "scripts": {
+    "jade": "jade views -o ./",
     "watch-jade": "jade -w views -o ./",
     "watch": "npm run watch-jade",
     "server": "live-server ./",
     "start": "npm run watch & npm run server"
   },
   "devDependencies": {
+    "html2jade": "^0.8.4",
     "jade": "1.11.0",
     "live-server": "0.8.2"
   }
